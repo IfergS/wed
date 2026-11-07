@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b20">
+  <meta name="description" content="A cinematic interactive monthsary storybook for two people in love.">
+  <title>Our Story — A Monthsary Storybook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/config.js"></script>
+  <script defer src="js/script.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="js/animations.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to story</a>
+  <div class="site-grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Back to the beginning">
+      <span class="brand-mark"><i class="bi bi-heart-fill" aria-hidden="true"></i></span>
+      <span class="brand-copy"><span>Our</span><strong>Storybook</strong></span>
+    </a>
+    <nav class="story-nav" aria-label="Story chapters">
+      <a href="#chapter-one" data-nav-link="chapter-one">Our Story</a>
+      <a href="#memories" data-nav-link="memories">Memories</a>
+      <a href="#letter" data-nav-link="letter">Message</a>
+      <a href="#forever" data-nav-link="forever">Forever</a>
+    </nav>
+    <div class="header-tools">
+      <span class="chapter-counter" aria-live="polite"><span data-current-chapter>00</span><span class="counter-divider">/</span><span>06</span></span>
+      <button class="icon-button music-toggle" type="button" aria-pressed="false" aria-label="Play music" data-music-toggle>
+        <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="sr-only" data-music-label>Play music</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero story-section" id="home" data-chapter="00" aria-labelledby="hero-title">
+      <div class="hero-sky" data-parallax="sky" aria-hidden="true">
+        <div class="stars stars--one"></div>
+        <div class="stars stars--two"></div>
+        <div class="moon"><span class="moon-glow"></span><span class="moon-crater moon-crater--one"></span><span class="moon-crater moon-crater--two"></span><span class="moon-crater moon-crater--three"></span></div>
+        <div class="cloud cloud--one"></div>
+        <div class="cloud cloud--two"></div>
+        <div class="cloud cloud--three"></div>
+        <div class="distant-city"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="hero-horizon"></div>
+      </div>
+
+      <div class="floating-petals" data-floaters="hero" aria-hidden="true"></div>
+
+      <div class="hero-content page-padding">
+        <p class="eyebrow reveal-up"><span class="eyebrow-line"></span><span data-config="date">November 7, 2026</span></p>
+        <p class="hero-kicker reveal-up">A little story about <span data-config="names">Alex &amp; Mia</span></p>
+        <h1 id="hero-title" class="hero-title reveal-up">Happy <em>Monthsary,</em><br><span>My Bun!</span></h1>
+        <p class="hero-subtitle reveal-up">Another month, another chapter of our beautiful story...</p>
+        <div class="hero-actions reveal-up">
+          <a class="button button--light" href="#chapter-one"><span>Begin our story</span><i class="bi bi-arrow-down-right" aria-hidden="true"></i></a>
+          <span class="hero-note">Chapter one is waiting</span>
+        </div>
+      </div>
+
+      <div class="hero-scene" data-parallax="scene" aria-hidden="true">
+        <div class="couple-spotlight"></div>
+        <div class="blanket"></div>
+        <div class="hero-person hero-person--left"><span class="person-hair"></span><span class="person-head"></span><span class="person-body"></span><span class="person-arm"></span><span class="person-leg"></span></div>
+        <div class="hero-person hero-person--right"><span class="person-hair"></span><span class="person-head"></span><span class="person-body"></span><span class="person-arm"></span><span class="person-leg"></span></div>
+        <div class="grass-blades grass-blades--one"></div>
+        <div class="grass-blades grass-blades--two"></div>
+      </div>
+
+      <a class="scroll-cue" href="#chapter-one" aria-label="Scroll to the first chapter">
+        <span class="scroll-cue__text">Scroll to continue</span>
+        <span class="scroll-cue__line"><i></i></span>
+      </a>
+    </section>
+
+    <section class="chapter chapter--paper story-section" id="chapter-one" data-chapter="01" aria-labelledby="chapter-one-title">
+      <div class="chapter-backdrop" aria-hidden="true"><span class="backdrop-orb"></span><span class="backdrop-orb backdrop-orb--two"></span></div>
+      <div class="chapter-marker page-padding"><span>01</span><span class="marker-rule"></span><span>the beginning</span></div>
+      <div class="book-wrap page-padding" data-book>
+        <div class="book-shadow" aria-hidden="true"></div>
+        <div class="open-book open-book--beginning">
+          <article class="book-page book-page--left">
+            <div class="page-corner" aria-hidden="true"></div>
+            <div class="page-inner">
+              <p class="paper-kicker">The first page</p>
+              <h2 id="chapter-one-title">How it all<br><em>began...</em></h2>
+              <div class="ornament ornament--heart" aria-hidden="true"><span>♥</span></div>
+              <p class="book-copy">IIt really all started when you looked at me while I was doing the laundry.</p>
+              <p class="hand-note">Some stories feel like home from the very first line.</p>
+              <span class="page-number">01</span>
+            </div>
+          </article>
+          <article class="book-page book-page--right">
+            <div class="page-inner page-inner--visual">
+              <div class="polaroid polaroid--chapter">
+                <div class="photo-surface photo-surface--chapter" role="img" aria-label="Placeholder portrait of a couple under warm lights"></div>
+                <div class="polaroid-caption"><span>our favorite kind of ordinary</span><i class="bi bi-heart-fill" aria-hidden="true"></i></div>
+              </div>
+              <div class="pressed-flower pressed-flower--one" aria-hidden="true"></div>
+              <div class="pressed-flower pressed-flower--two" aria-hidden="true"></div>
+              <p class="page-side-note">A simple hello.<br>A thousand little<br>reasons to stay.</p>
+              <span class="page-number page-number--right">02</span>
+            </div>
+          </article>
+        </div>
+        <div class="book-spine" aria-hidden="true"></div>
+      </div>
+      <div class="chapter-foot page-padding"><span>keep turning the pages</span><i class="bi bi-arrow-down" aria-hidden="true"></i></div>
+    </section>
+
+    <section class="chapter chapter--midnight story-section" id="memories" data-chapter="02" aria-labelledby="memories-title">
+      <div class="memory-stars" aria-hidden="true"></div>
+      <div class="chapter-marker page-padding chapter-marker--light"><span>02</span><span class="marker-rule"></span><span>the in-between</span></div>
+      <div class="book-wrap page-padding" data-book>
+        <div class="book-shadow book-shadow--blue" aria-hidden="true"></div>
+        <div class="open-book open-book--memories">
+          <article class="book-page book-page--left book-page--photo">
+            <div class="page-inner page-inner--visual">
+              <div class="memory-polaroid">
+                <div class="photo-surface photo-surface--memory" role="img" aria-label="Placeholder memory photo of two people walking together"></div>
+                <span class="memory-stamp">you &amp; me <i class="bi bi-heart-fill" aria-hidden="true"></i></span>
+              </div>
+              <div class="photo-date"><span data-config="months">12</span> months<br>of choosing us</div>
+              <span class="page-number">03</span>
+            </div>
+          </article>
+          <article class="book-page book-page--right book-page--midnight">
+            <div class="page-inner">
+              <p class="paper-kicker paper-kicker--rose">The pages between</p>
+              <h2 id="memories-title">Through the ups<br><em>&amp; downs...</em></h2>
+              <div class="quote-rule"><span>“</span><i></i></div>
+              <p class="book-copy">We've laughed together, cried together, and supported each other in every battle. And no matter what, we always choose each other.</p>
+              <div class="memory-footer"><span class="hand-note hand-note--light">love lives in the little things</span><span class="page-number">04</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="book-spine book-spine--dark" aria-hidden="true"></div>
+      </div>
+      <div class="memory-hearts" data-floaters="memory" aria-hidden="true"></div>
+    </section>
+
+    <section class="moments story-section" id="moments" data-chapter="03" aria-labelledby="moments-title">
+      <div class="moments-wash" aria-hidden="true"></div>
+      <div class="chapter-marker page-padding"><span>03</span><span class="marker-rule"></span><span>little moments</span></div>
+      <div class="moments-heading page-padding">
+        <div>
+          <p class="eyebrow eyebrow--rose reveal-up"><span class="eyebrow-line"></span>scenes from us</p>
+          <h2 id="moments-title" class="section-title reveal-up">Our beautiful<br><em>moments.</em></h2>
+        </div>
+        <p class="section-intro reveal-up">The best memories are rarely loud. They are soft, sunlit, and hidden in the middle of an ordinary day.</p>
+      </div>
+      <div class="gallery-grid page-padding" id="gallery-grid" aria-live="polite"></div>
+      <div class="gallery-footer page-padding"><span>03 / 06</span><span class="footer-line"></span><span>and there is still so much more</span></div>
+    </section>
+
+    <section class="letter-section story-section" id="letter" data-chapter="04" aria-labelledby="letter-title">
+      <div class="letter-stars" aria-hidden="true"></div>
+      <div class="chapter-marker page-padding chapter-marker--light"><span>04</span><span class="marker-rule"></span><span>from my heart</span></div>
+      <div class="letter-layout page-padding">
+        <div class="letter-intro">
+          <p class="eyebrow eyebrow--rose reveal-up"><span class="eyebrow-line"></span>a note for you</p>
+          <h2 id="letter-title" class="section-title section-title--light reveal-up">A little message<br><em>for you...</em></h2>
+          <p class="section-intro section-intro--light reveal-up">Some feelings deserve more than a caption. Tap the envelope and let me say it properly.</p>
+          <span class="letter-signature reveal-up">with all my love, <b data-config="names-short">A</b></span>
+        </div>
+        <div class="letter-stage reveal-up" data-letter-stage>
+          <div class="envelope-shadow" aria-hidden="true"></div>
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="letter-paper">
+              <div class="letter-paper__top"><span>for my favorite person</span><i class="bi bi-heart-fill" aria-hidden="true"></i></div>
+              <p class="letter-paper__heading">My bun,</p>
+              <p class="letter-paper__body" data-config="message">I love you always, bun/be. I might not be able to give you everything you want right now, but I promise I’ll make it up to you someday. All I ask is for you to love me honestly and faithfully, and I will love you even more.</p>
+              <p class="letter-paper__signoff">Always yours,<br><span data-config="names-short">A</span> <i class="bi bi-heart-fill" aria-hidden="true"></i></p>
+            </div>
+            <div class="envelope-front"></div>
+            <div class="envelope-flap"></div>
+            <div class="wax-seal"><i class="bi bi-heart-fill" aria-hidden="true"></i></div>
+          </div>
+          <button class="button button--rose letter-button" type="button" aria-expanded="false" aria-controls="letter-status" data-letter-toggle><span>Open my letter</span><i class="bi bi-heart-fill" aria-hidden="true"></i></button>
+          <p class="sr-only" id="letter-status" aria-live="polite">The letter is closed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="forever-section story-section" id="forever" data-chapter="05" aria-labelledby="forever-title">
+      <div class="forever-sky" aria-hidden="true"><div class="sunset-halo"></div><div class="forever-stars"></div><div class="forever-cloud forever-cloud--one"></div><div class="forever-cloud forever-cloud--two"></div></div>
+      <div class="floating-petals floating-petals--final" data-floaters="final" aria-hidden="true"></div>
+      <div class="forever-heart" aria-hidden="true"><i class="bi bi-heart-fill"></i></div>
+      <div class="forever-couple" aria-hidden="true"><div class="embrace-person embrace-person--one"></div><div class="embrace-person embrace-person--two"></div></div>
+      <div class="forever-copy page-padding">
+        <p class="eyebrow eyebrow--rose reveal-up"><span class="eyebrow-line"></span>the final chapter, for now</p>
+        <p class="forever-and reveal-up">And now...</p>
+        <h2 id="forever-title" class="forever-title reveal-up">Happy Monthsary,<br><em>My Bun!</em></h2>
+        <p class="forever-message reveal-up" data-config="finalMessage">Thank you for being you. I'm so grateful for you, today and always. Here's to more months, more memories, and a lifetime together.</p>
+        <p class="forever-signature reveal-up">I love you <span>♥</span></p>
+        <button class="button button--light forever-button reveal-up" type="button" data-forever-button><span>Forever and always</span><i class="bi bi-heart-fill" aria-hidden="true"></i></button>
+      </div>
+      <div class="rose-border" aria-hidden="true"><span>✦</span><span>✿</span><span>✦</span><span>❀</span><span>✦</span><span>✿</span><span>✦</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>made by <b data-config="signatureName">ferg</b> for <b data-config="names">Myles &amp; Ferg</b></span><span>chapter 06 / 06</span><span>with a little extra magic</span></footer>
+  <audio data-music preload="none" loop></audio>
+  <div class="heart-burst" data-heart-burst aria-hidden="true"></div>
+</body>
+</html>

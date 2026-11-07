@@ -1,0 +1,11 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local preview/runtime files
+*.log
+node_modules/
+dist/
+.env
+.env.*
